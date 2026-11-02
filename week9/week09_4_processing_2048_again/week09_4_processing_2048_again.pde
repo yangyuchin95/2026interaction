@@ -1,0 +1,20 @@
+//week09_4_processing_2048_again
+//自己寫2048配上聲音
+void setup(){
+  size(550,550);
+}
+
+void draw(){
+  background(250,248,239);
+  noStroke();
+  fill(187, 173, 160);
+  rect(40, 40, 450, 450, 9);
+  for (int i=0; i<4; i++){
+    for (int j=0; j<4; j++){
+      int x = 50+j*(100+10);
+      int y = 50+i*(100+10);
+      fill(238,228,218);
+      rect(x, y, 100, 100, 6);
+    }
+  }
+}
